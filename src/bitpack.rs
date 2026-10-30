@@ -57,25 +57,6 @@ pub fn getu(word: u64, width: u64, lsb: u64) -> Option<u64> {
     None
 }
 
-/// Given an unsigned 64-bit `word`, and an unsigned `value`,
-/// pack that `value` into `width` bits of the `word` starting at
-/// least-significant bit `lsb`, if possible.
-///
-/// # Arguments
-///
-/// * `word` - an arbitrary unsigned 64-bit word
-/// * `width` - a number of bits describing a field
-/// * `lsb` - the-least significant bit of a field
-/// * `value` - the unsigned value to store in the field
-///
-/// # Returns
-///
-/// an `Option<u64>` which contains the desired value at the appropriate field, if possible
-/// If the value does not fit, returns `None`
-pub fn newu(word: u64, width: u64, lsb: u64, value: u64) -> Option<u64> {
-    Some(0)
-}
-
 /// Given an unsigned 64-bit `word`, and a signed `value`,
 /// pack that `value` into `width` bits of the `word` starting at
 /// least-significant bit `lsb`, if possible.
@@ -93,5 +74,24 @@ pub fn newu(word: u64, width: u64, lsb: u64, value: u64) -> Option<u64> {
 /// If the value does not fit, returns `None`
 ///
 pub fn news(word: u64, width: u64, lsb: u64, value: i64) -> Option<u64> {
+    Some(0)
+}
+
+/// Given an unsigned 64-bit `word`, and an unsigned `value`,
+/// pack that `value` into `width` bits of the `word` starting at
+/// least-significant bit `lsb`, if possible.
+///
+/// # Arguments
+///
+/// * `word` - an arbitrary unsigned 64-bit word
+/// * `width` - a number of bits describing a field
+/// * `lsb` - the-least significant bit of a field
+/// * `value` - the unsigned value to store in the field
+///
+/// # Returns
+///
+/// an `Option<u64>` which contains the desired value at the appropriate field, if possible
+/// If the value does not fit, returns `None`
+pub fn newu(word: u64, width: u64, lsb: u64, value: u64) -> Option<u64> {
     Some(0)
 }
